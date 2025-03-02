@@ -1,6 +1,6 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations;
+namespace NomanSheikh\LaravelOneTimeOperations;
 
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Collection;
@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use SplFileInfo;
 use Symfony\Component\Finder\Exception\DirectoryNotFoundException;
-use TimoKoerber\LaravelOneTimeOperations\Models\Operation;
+use NomanSheikh\LaravelOneTimeOperations\Models\Operation;
 
 class OneTimeOperationManager
 {

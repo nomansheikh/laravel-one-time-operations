@@ -1,13 +1,13 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations\Jobs;
+namespace NomanSheikh\LaravelOneTimeOperations\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperationManager;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperationManager;
 
 class OneTimeOperationProcessJob implements ShouldQueue
 {

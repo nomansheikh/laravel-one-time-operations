@@ -1,6 +1,6 @@
 <?php
 
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperation;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperation;
 
 return new class extends OneTimeOperation
 {

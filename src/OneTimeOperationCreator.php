@@ -1,11 +1,14 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations;
+namespace NomanSheikh\LaravelOneTimeOperations;
 
 use ErrorException;
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
+use SplFileInfo;
+use Throwable;
 
 class OneTimeOperationCreator
 {
@@ -23,7 +26,7 @@ class OneTimeOperationCreator
     }
 
     /**
-     * @throws \Throwable
+     * @throws Throwable
      */
     public static function createOperationFile(string $name, bool $essential = false): OneTimeOperationFile
     {
@@ -35,9 +38,9 @@ class OneTimeOperationCreator
     }
 
     /**
-     * @throws \Throwable
+     * @throws Throwable
      */
-    public function createFile(): \SplFileInfo
+    public function createFile(): SplFileInfo
     {
         $path = $this->getPath();
         $stub = $this->getStubFilepath();
@@ -47,7 +50,7 @@ class OneTimeOperationCreator
 
         File::put($path, $stub);
 
-        return new \SplFileInfo($path);
+        return new SplFileInfo($path);
     }
 
     protected function getPath(): string
@@ -55,6 +58,9 @@ class OneTimeOperationCreator
         return $this->operationsDirectory.DIRECTORY_SEPARATOR.$this->getOperationName();
     }
 
+    /**
+     * @throws FileNotFoundException
+     */
     protected function getStubFilepath(): string
     {
         // check for custom stub file

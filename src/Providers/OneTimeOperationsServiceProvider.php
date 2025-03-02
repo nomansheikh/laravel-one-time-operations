@@ -1,11 +1,11 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations\Providers;
+namespace NomanSheikh\LaravelOneTimeOperations\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use TimoKoerber\LaravelOneTimeOperations\Commands\OneTimeOperationShowCommand;
-use TimoKoerber\LaravelOneTimeOperations\Commands\OneTimeOperationsMakeCommand;
-use TimoKoerber\LaravelOneTimeOperations\Commands\OneTimeOperationsProcessCommand;
+use NomanSheikh\LaravelOneTimeOperations\Commands\OneTimeOperationShowCommand;
+use NomanSheikh\LaravelOneTimeOperations\Commands\OneTimeOperationsMakeCommand;
+use NomanSheikh\LaravelOneTimeOperations\Commands\OneTimeOperationsProcessCommand;
 
 class OneTimeOperationsServiceProvider extends ServiceProvider
 {
@@ -24,7 +24,7 @@ class OneTimeOperationsServiceProvider extends ServiceProvider
         }
     }
 
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(
             __DIR__.'/../../config/one-time-operations.php', 'one-time-operations'

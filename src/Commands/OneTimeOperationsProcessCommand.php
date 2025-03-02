@@ -1,14 +1,14 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations\Commands;
+namespace NomanSheikh\LaravelOneTimeOperations\Commands;
 
 use Illuminate\Contracts\Console\Isolatable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use TimoKoerber\LaravelOneTimeOperations\Jobs\OneTimeOperationProcessJob;
-use TimoKoerber\LaravelOneTimeOperations\Models\Operation;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperationFile;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperationManager;
+use NomanSheikh\LaravelOneTimeOperations\Jobs\OneTimeOperationProcessJob;
+use NomanSheikh\LaravelOneTimeOperations\Models\Operation;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperationFile;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperationManager;
 
 class OneTimeOperationsProcessCommand extends OneTimeOperationsCommand implements Isolatable
 {

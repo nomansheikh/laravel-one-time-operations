@@ -1,12 +1,12 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations\Tests\Feature;
+namespace NomanSheikh\LaravelOneTimeOperations\Tests\Feature;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperation;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperationCreator;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperationFile;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperation;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperationCreator;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperationFile;
 
 class OneTimeOperationCreatorTest extends OneTimeOperationCase
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations\Tests\Feature;
+namespace NomanSheikh\LaravelOneTimeOperations\Tests\Feature;
 
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Collection;
 use SplFileInfo;
-use TimoKoerber\LaravelOneTimeOperations\Models\Operation;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperation;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperationFile;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperationManager;
+use NomanSheikh\LaravelOneTimeOperations\Models\Operation;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperation;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperationFile;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperationManager;
 
 class OneTimeOperationManagerTest extends OneTimeOperationCase
 {
@@ -68,7 +68,7 @@ class OneTimeOperationManagerTest extends OneTimeOperationCase
 
     public function test_get_operation_file_by_model_throws_exception()
     {
-        $operationModel = Operation::factory()->make(['name' => 'file_does_not_exist']); // matching file does noe exist
+        $operationModel = Operation::factory()->make(['name' => 'file_does_not_exist']); // matching file does not exist
 
         $this->expectException(FileNotFoundException::class);
 

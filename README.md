@@ -26,7 +26,7 @@ This package is for you if...
 Require this package with composer:
 
 ```shell
-composer require timokoerber/laravel-one-time-operations
+composer require nomansheikh/laravel-one-time-operations
 ```
 
 Create the required table in your database:
@@ -148,7 +148,7 @@ By default, the following elements will be created in your project:
 If you want to use a different settings just publish and edit the config file:
 
 ```shell
-php artisan vendor:publish --provider="TimoKoerber\LaravelOneTimeOperations\Providers\OneTimeOperationsServiceProvider"
+php artisan vendor:publish --provider="NomanSheikh\LaravelOneTimeOperations\Providers\OneTimeOperationsServiceProvider"
 ```
 
 This will create the file `config/one-time-operations.php` with the following content.
@@ -182,7 +182,7 @@ This will create a file like `operations/XXXX_XX_XX_XXXXXX_awesome_operation.php
 <?php
 // operations/XXXX_XX_XX_XXXXXX_awesome_operation.php
 
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperation;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperation;
 
 return new class extends OneTimeOperation
 {
@@ -311,7 +311,7 @@ That way you can filter operations with this specific tag when processing the op
 php artisan operations:process --tag=awesome  // run only operations with "awesome" tag
 ```
 
-This is quite usefull if, for example, you want to process some of your operations before and some after the migrations: 
+This is quite useful if, for example, you want to process some of your operations before and some after the migrations: 
 
 ```text
  - php artisan operations:process --tag=before-migrations 
@@ -378,7 +378,7 @@ composer test
 
 ## License
 
-Copyright © Timo Körber | [www.timokoerber.com](https://www.timokoerber.com)
+Copyright © Noman Sheikh | [hey@noman.codes](mailto:hey@noman.codes)
 
 "One-Time Operations for Laravel" is open-sourced software licensed under the [MIT license](LICENSE).
 

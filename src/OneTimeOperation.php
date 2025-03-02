@@ -1,6 +1,6 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations;
+namespace NomanSheikh\LaravelOneTimeOperations;
 
 abstract class OneTimeOperation
 {

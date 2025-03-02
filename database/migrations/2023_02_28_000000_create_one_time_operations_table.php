@@ -3,8 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use TimoKoerber\LaravelOneTimeOperations\Models\Operation;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperationManager;
+use NomanSheikh\LaravelOneTimeOperations\Models\Operation;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperationManager;
 
 class CreateOneTimeOperationsTable extends Migration
 {

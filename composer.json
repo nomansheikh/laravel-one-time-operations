@@ -1,5 +1,5 @@
 {
-    "name": "timokoerber/laravel-one-time-operations",
+    "name": "nomansheikh/laravel-one-time-operations",
     "description": "Run operations once after deployment - just like you do it with migrations!",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "timo.koerber",
-            "email": "koerber.timo@gmail.com",
-            "homepage": "https://www.timokoerber.com",
+            "name": "Noman Sheikh",
+            "email": "hey@noman.codes",
+            "homepage": "https://www.noman.codes",
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/timokoerber/laravel-one-time-operations",
+    "homepage": "https://github.com/nomansheikh/laravel-one-time-operations",
     "require": {
         "php": "^8.0",
         "illuminate/contracts": "^9.0|^10.0|^11.0|^12.0",
@@ -31,14 +31,14 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "TimoKoerber\\LaravelOneTimeOperations\\": "src/",
-            "TimoKoerber\\LaravelOneTimeOperations\\Database\\Factories\\": "database/factories/"
+            "NomanSheikh\\LaravelOneTimeOperations\\": "src/",
+            "NomanSheikh\\LaravelOneTimeOperations\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TimoKoerber\\LaravelOneTimeOperations\\Tests\\": "tests",
-            "TimoKoerber\\LaravelOneTimeOperations\\Tests\\Feature\\": "tests/Feature"
+            "NomanSheikh\\LaravelOneTimeOperations\\Tests\\": "tests",
+            "NomanSheikh\\LaravelOneTimeOperations\\Tests\\Feature\\": "tests/Feature"
         }
     },
     "scripts": {
@@ -54,7 +54,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "TimoKoerber\\LaravelOneTimeOperations\\Providers\\OneTimeOperationsServiceProvider"
+                "NomanSheikh\\LaravelOneTimeOperations\\Providers\\OneTimeOperationsServiceProvider"
             ]
         }
     }

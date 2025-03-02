@@ -1,10 +1,10 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations\Commands;
+namespace NomanSheikh\LaravelOneTimeOperations\Commands;
 
 use Illuminate\Console\Command;
-use TimoKoerber\LaravelOneTimeOperations\Commands\Utils\ColoredOutput;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperationManager;
+use NomanSheikh\LaravelOneTimeOperations\Commands\Utils\ColoredOutput;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperationManager;
 
 abstract class OneTimeOperationsCommand extends Command
 {

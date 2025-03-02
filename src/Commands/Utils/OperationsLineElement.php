@@ -1,10 +1,10 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations\Commands\Utils;
+namespace NomanSheikh\LaravelOneTimeOperations\Commands\Utils;
 
 use Illuminate\Console\View\Components\Factory;
 use Illuminate\Support\Carbon;
-use TimoKoerber\LaravelOneTimeOperations\Commands\OneTimeOperationsCommand;
+use NomanSheikh\LaravelOneTimeOperations\Commands\OneTimeOperationsCommand;
 
 class OperationsLineElement
 {

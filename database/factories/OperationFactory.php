@@ -1,11 +1,11 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations\Database\Factories;
+namespace NomanSheikh\LaravelOneTimeOperations\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use TimoKoerber\LaravelOneTimeOperations\Models\Operation;
+use NomanSheikh\LaravelOneTimeOperations\Models\Operation;
 
 class OperationFactory extends Factory
 {

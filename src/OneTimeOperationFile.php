@@ -1,11 +1,12 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations;
+namespace NomanSheikh\LaravelOneTimeOperations;
 
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use SplFileInfo;
-use TimoKoerber\LaravelOneTimeOperations\Models\Operation;
+use NomanSheikh\LaravelOneTimeOperations\Models\Operation;
 
 class OneTimeOperationFile
 {
@@ -31,6 +32,9 @@ class OneTimeOperationFile
         return Str::remove('.php', $filename);
     }
 
+    /**
+     * @throws FileNotFoundException
+     */
     public function getClassObject(): OneTimeOperation
     {
         if (! $this->classObject) {

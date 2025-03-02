@@ -1,13 +1,13 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations\Tests\Feature;
+namespace NomanSheikh\LaravelOneTimeOperations\Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Str;
-use TimoKoerber\LaravelOneTimeOperations\Jobs\OneTimeOperationProcessJob;
-use TimoKoerber\LaravelOneTimeOperations\Models\Operation;
+use NomanSheikh\LaravelOneTimeOperations\Jobs\OneTimeOperationProcessJob;
+use NomanSheikh\LaravelOneTimeOperations\Models\Operation;
 
 class OneTimeOperationCommandTest extends OneTimeOperationCase
 {

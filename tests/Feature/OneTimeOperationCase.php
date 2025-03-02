@@ -1,12 +1,12 @@
 <?php
 
-namespace TimoKoerber\LaravelOneTimeOperations\Tests\Feature;
+namespace NomanSheikh\LaravelOneTimeOperations\Tests\Feature;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Queue;
 use Orchestra\Testbench\TestCase;
-use TimoKoerber\LaravelOneTimeOperations\Providers\OneTimeOperationsServiceProvider;
+use NomanSheikh\LaravelOneTimeOperations\Providers\OneTimeOperationsServiceProvider;
 
 abstract class OneTimeOperationCase extends TestCase
 {
@@ -26,6 +26,11 @@ abstract class OneTimeOperationCase extends TestCase
         Carbon::setTestNow(self::TEST_DATETIME);
     }
 
+    protected function tearDown(): void
+    {
+        parent::tearDown();
+    }
+
     protected function getPackageProviders($app): array
     {
         return [
@@ -33,7 +38,7 @@ abstract class OneTimeOperationCase extends TestCase
         ];
     }
 
-    protected function defineEnvironment($app)
+    protected function defineEnvironment($app): void
     {
         // Setup directory to provide test files
         $app['config']->set('one-time-operations.directory', '../../../../'.self::TEST_FILE_DIRECTORY);
@@ -41,12 +46,12 @@ abstract class OneTimeOperationCase extends TestCase
         $app['config']->set('queue.default', 'database');
     }
 
-    protected function deleteFileDirectory()
+    protected function deleteFileDirectory(): void
     {
         File::deleteDirectory(self::TEST_FILE_DIRECTORY);
     }
 
-    protected function mockFileDirectory()
+    protected function mockFileDirectory(): void
     {
         File::copyDirectory('tests/resources', self::TEST_FILE_DIRECTORY);
     }

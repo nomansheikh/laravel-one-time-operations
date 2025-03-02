@@ -1,11 +1,11 @@
 <?php
 
-namespace  TimoKoerber\LaravelOneTimeOperations\Models;
+namespace  NomanSheikh\LaravelOneTimeOperations\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use TimoKoerber\LaravelOneTimeOperations\Database\Factories\OperationFactory;
-use TimoKoerber\LaravelOneTimeOperations\OneTimeOperationManager;
+use NomanSheikh\LaravelOneTimeOperations\Database\Factories\OperationFactory;
+use NomanSheikh\LaravelOneTimeOperations\OneTimeOperationManager;
 
 class Operation extends Model
 {
